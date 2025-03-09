@@ -1,0 +1,7 @@
+/node_modules/       # Bỏ qua thư mục node_modules (thường dùng trong dự án Node.js)
+dist/               # Bỏ qua thư mục build hoặc dist
+.DS_Store           # Bỏ qua file hệ thống trên macOS
+Thumbs.db           # Bỏ qua file hệ thống trên Windows
+*.log               # Bỏ qua tất cả các file log
+.env                # Bỏ qua file chứa biến môi trường (bảo mật)
+.vs/
