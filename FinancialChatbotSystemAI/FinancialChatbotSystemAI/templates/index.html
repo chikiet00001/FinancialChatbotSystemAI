@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Dashboard</title>
+</head>
+<body>
+    <h1>Financial Information Dashboard</h1>
+
+    <form method="POST" action="/">
+        <label for="currency">Enter Currency Code (e.g., EUR, JPY): </label>
+        <input type="text" id="currency" name="currency">
+        <button type="submit">Get Exchange Rate</button>
+    </form>
+    <p>{{ exchange_rate }}</p>
+
+    <form method="POST" action="/">
+        <label for="stock_symbol">Enter Stock Symbol (e.g., AAPL, MSFT): </label>
+        <input type="text" id="stock_symbol" name="stock_symbol">
+        <button type="submit">Get Stock Price</button>
+    </form>
+    <p>{{ stock_price }}</p>
+
+    <form method="POST" action="/">
+        <button type="submit" name="gold">Get Gold Price</button>
+    </form>
+    <p>{{ gold_price }}</p>
+
+    <h3>Financial Advice:</h3>
+    <p>{{ financial_advice }}</p>
+
+</body>
+</html>
